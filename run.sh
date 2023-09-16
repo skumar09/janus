@@ -26,6 +26,9 @@ echo "*******************************"
 IFS='/' read -ra REPO_PARTS <<< "$GITHUB_REPOSITORY"
 ORG="${REPO_PARTS[0]}"
 REPO="${REPO_PARTS[1]}"
+echo "GitHub Org: $ORG"
+echo "${REPO_PARTS[@]}"
+
 
 PR_BRANCH_URL="https://$FEATURE_BRANCH--$REPO--$ORG.hlx.live"
 
